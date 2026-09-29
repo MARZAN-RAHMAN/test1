@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101322">
+  <meta name="description" content="A little about this small corner of the internet.">
+  <title>About — Hello, World!</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #101322; color: #f5f4ff; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+    * { box-sizing: border-box; }
+    body { min-width: 320px; min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 6rem 1.25rem 4rem; background: radial-gradient(ellipse at 18% 16%, rgba(125,92,255,.22), transparent 34rem), radial-gradient(ellipse at 88% 82%, rgba(44,217,190,.12), transparent 30rem), #101322; }
+    .site-nav { position: fixed; z-index: 2; top: 1.25rem; left: 50%; transform: translateX(-50%); display: flex; gap: .35rem; padding: .35rem; border: 1px solid rgba(255,255,255,.12); border-radius: 999px; background: rgba(16,19,34,.68); backdrop-filter: blur(16px); }
+    .site-nav a { padding: .62rem .9rem; border-radius: 999px; color: #c5c2d8; font-size: .82rem; font-weight: 600; text-decoration: none; transition: color .2s ease, background .2s ease; }
+    .site-nav a:hover, .site-nav a[aria-current="page"] { color: #fff; background: rgba(255,255,255,.12); }
+    .site-nav a:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid #77ead4; outline-offset: 3px; }
+    main { width: min(760px, 100%); padding: clamp(2rem, 7vw, 4.5rem); border: 1px solid rgba(255,255,255,.12); border-radius: 28px; background: linear-gradient(145deg, rgba(255,255,255,.075), rgba(255,255,255,.025)); box-shadow: 0 32px 100px rgba(0,0,0,.38), inset 0 1px rgba(255,255,255,.08); backdrop-filter: blur(18px); animation: arrive .7s ease both; }
+    .eyebrow { margin: 0 0 1rem; color: #77ead4; font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(3rem, 9vw, 5.5rem); line-height: 1; letter-spacing: -.07em; }
+    h1 span { color: transparent; background: linear-gradient(100deg, #b9a6ff, #f3c3ff 52%, #77ead4); background-clip: text; -webkit-background-clip: text; }
+    .lead { margin: 1.5rem 0 2rem; color: #c5c2d8; font-size: clamp(1.1rem, 2.5vw, 1.3rem); line-height: 1.7; }
+    .copy { color: #aaa9bd; line-height: 1.8; }
+    .note { margin-top: 2rem; padding: 1rem 1.2rem; border-left: 2px solid #77ead4; border-radius: 0 12px 12px 0; background: rgba(119,234,212,.06); color: #d1cfdf; }
+    .footer { position: fixed; right: 1.5rem; bottom: 1.25rem; left: 1.5rem; color: rgba(218,216,236,.42); font-size: .72rem; letter-spacing: .04em; text-align: center; }
+    @keyframes arrive { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <p class="eyebrow">A little backstory</p>
+    <h1>About <span>this page</span></h1>
+    <p class="lead">Every great idea starts somewhere. This one started with a simple hello.</p>
+    <p class="copy">Welcome to this small corner of the internet: a friendly place built to share ideas, make things, and see where a little curiosity can lead. It’s a work in progress, and that’s part of the fun.</p>
+    <p class="copy">Thanks for stopping by. Have a look around, and if something sparks an idea, come say hello.</p>
+    <div class="note">Small beginnings can lead to wonderful things. ✦</div>
+  </main>
+  <div class="footer">Made with a little bit of HTML &amp; CSS</div>
+</body>
+</html>
